@@ -4,9 +4,9 @@ class NewThread extends Thread {
     Thread t;
 
     NewThread() {
-        t = new Thread(this, "demo");
-        System.out.println(t.getName());
-        t.start();
+         super("demo");
+        System.out.println(this);
+        start();
     }
 
     public void run() {
